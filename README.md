@@ -1,2 +1,2 @@
-# robots-in-public
-Responsible AI UK funded project on autonomous robots in public
+# stuaart.github.io
+The web root for stuaart.github.io Pages
