@@ -45,6 +45,11 @@ html {
   width:100%;
 }
 
+.embed-border
+{
+    border: 3px solid lightgrey;
+    padding: 20px;
+}
     </style>
 
     <script>
@@ -80,7 +85,9 @@ $('a[data-toggle="tooltip"]').tooltip({
 
     <p>If robots are to be deployed in public places, we
 need to understand what factors their design should consider. Our <a href="https://humanrobotinteraction.org/2025/">HRI 2025</a> paper "<a href="http://www.cs.nott.ac.uk/~pszsr/files/pelikan-2025-making-space-framework.pdf">Making Sense of Public Space for Robot Design</a>" tackles this issue head-on. 
-The framework presented in the paper, and reproduced on this page, is intended for understanding, reflecting upon, and sensitising design to issues that might impact <a href="https://www.urbanroboticsfoundation.org/post/defines-public-mobile-robot">public-area mobile robots</a> (PMRs, cf. <a href="https://www.urbanroboticsfoundation.org">Urban Robotics Foundation</a>'s work on ISO 4448).</p>
+The framework presented in this paper and reproduced on this page, is intended for understanding, reflecting upon, and sensitising design to issues that might impact <a href="https://www.urbanroboticsfoundation.org/post/defines-public-mobile-robot">public-area mobile robots</a> (PMRs, cf. <a href="https://www.urbanroboticsfoundation.org">Urban Robotics Foundation</a>'s work on ISO 4448). The published paper goes into much more depth, of course, but we summarise its core components with illustrative videos below.</p>
+
+    <a name="framework"></a>
 
     <p>The framework is inspired by sociological studies of urban settings, particularly the work of <a href="https://en.wikipedia.org/wiki/The_Social_Life_of_Small_Urban_Spaces">William H. Whyte</a> and the <a href="">Street Life Project</a>. It follows a similar format to the <a href="https://www.pps.org/article/grplacefeat">Project for Public Space's <em>Place Diagram</em></a>.</p>
     </div> <!-- col -->
@@ -91,7 +98,18 @@ The framework presented in the paper, and reproduced on this page, is intended f
     <div class="row">
     <!-- col -->
     <div class="col-md-8 mx-auto">
-    <img src="img/framework-full.png" class="img-max" alt="Four characteristics that the design of public robots should consider. Adapted from the Project for Public Space's 'The Place Diagram'">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 982 983">
+      <image width="982" height="983" xlink:href="img/framework-full.png" alt="Four characteristics that the design of public robots should consider. Adapted from the Project for Public Space's 'The Place Diagram'"></image> <a xlink:href="#localism">
+        <rect x="0" y="0" fill="#fff" opacity="0" width="484" height="481"><title>Localism</title></rect>
+      </a><a xlink:href="#environment">
+        <rect x="498" y="0" fill="#fff" opacity="0" width="484" height="480"><title>Environment</title></rect>
+      </a><a xlink:href="#sociability">
+        <rect x="0" y="491" fill="#fff" opacity="0" width="484" height="491"><title>Sociability</title></rect>
+      </a><a xlink:href="#activities">
+        <rect x="498" y="494" fill="#fff" opacity="0" width="484" height="489"><title>Activities</title></rect>
+      </a>
+    </svg>
+
     </div> <!-- col -->
     </div> <!-- row2 -->
 
@@ -100,9 +118,7 @@ The framework presented in the paper, and reproduced on this page, is intended f
     <!-- col -->
     <div class="col-xs-12">
     <h3>What the framework means</h3>
-    <p>We describe four characteristics of public places that affect and are affected by robot design. Our paper presents these characteristics as part of a broader design framework for informing and reflecting on design of / for public robots.</p>
-
-    <p>The framework consists of four characteristics of public space that need consideration: 
+    <p>We describe <strong>four characteristics of public places</strong> that affect and are affected by robot design. Our paper presents these characteristics as part of a broader design framework for informing and reflecting on design of / for public robots:
       <ul>
         <li>localism&mdash;how robot design aligns with the identity, culture, and character the place(s) they reside within</li> 
         <li>environment&mdash;the physical characteristics (designed and emergent) of the environment in which public robots operate</li> 
@@ -111,13 +127,51 @@ The framework presented in the paper, and reproduced on this page, is intended f
       </ul>
     </p>
 
+    <h2>Localism <a href="#framework" class="btn btn-outline-primary btn-sm" role="button" aria-pressed="true">back to top</a></h2>
 
-    <h2>Other supplementary material</h2>
+    <a name="localism"></a>
+    <p>Localism describes how the robot matches the character of the place in which it is operating.</p>
+    <p>Public robots deployed may be adjusted to the character of the local place by choosing specific forms of <em>visual presentation</em> (e.g., distinctive livery); the use of <em>cultural references</em> (e.g., to a local mascot or giving the robot a name); and adjustments to the <em>physical arrangement</em> around the robot (e.g., marking areas for robots).</p>
+
+    <div class="embed-border my-3 text-center">
+    <div class=" ratio ratio-16x9">
+    <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/JHPSTCV1acI?si=bjCSgliwERrOwtew" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    </div>
+
+
+    <h2>Environment <a href="#framework" class="btn btn-outline-primary btn-sm" role="button" aria-pressed="true">back to top</a></h2>
+    <a name="environment"></a>
+    <p>The physical characteristics of the environment affect how robots move in them.</p>
+    <p>For robots, the specific environment can play an important role in their public deployment. Our framework describes distinct aspects of this characteristic including: the <em>hospitability</em> of the built environment and its physical infrastructure (e.g., steep roads or high curbs); <em>nature</em> (e.g., wind, rain, snow, plant growth); and <em>mobile objects</em> (e.g., wheelie bins, parked bikes).
+    </p>
+    
+    <div class="embed-border my-3 text-center">
+    <div class=" ratio ratio-16x9">
+    <iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/lo4b2dFhcfs?si=RPyFSuMvuwzETF3m" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    </div>  
+
+    <h2>Activities <a href="#framework" class="btn btn-outline-primary btn-sm" role="button" aria-pressed="true">back to top</a></h2>
+    <a name="activities"></a>
+    <p>Places change over time; people can significantly transform public spaces over the course of a day, week, month, or year.</p>
+
+    <p>The challenge here for designing robots is that this dynamism of activities can sometimes rub up against the fixity of computational rule sets. We break these patterns down into subcharacteristics: the <em>daily rhythms</em> of places (e.g., rush hours); activities tied to specific <em>occasions</em> that impact places (e.g., seasonal festivities, construction work); and <em>situations</em> that emerge spontaneously (e.g., people chatting in the middle of the path (of a robot), loading and unloading activities).</p>
+
+    <h2>Sociability <a href="#framework" class="btn btn-outline-primary btn-sm" role="button" aria-pressed="true">back to top</a></h2>
+    <a name="sociability"></a>
+    <p>Places are sites of sociability, whether it is through musicians that bring people together or street corners that attract social life.</p> 
+    <p>
+    This characteristic is further subdivided into more distinctions, describing both intended aspects that are <em>designed</em>, in the sense of “designed-for” (e.g., a robot's lights, emitted sounds), and unintended aspects that are difficult to anticipate and may be <em>supportive</em> (e.g., people living obstacles out of a robot's way) or <em>inhibitive</em> to robots (e.g., getting too close to robot such that it stops, or putting obstacles in its way).
+    </p>
+
+
+    <!--h2>Other supplementary material</h2>
     <p>
     <div class="embed-responsive embed-responsive-16by9">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/fuSP2es3ayc?si=UdN3x9pC3zWZZsSI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
-    </p>
+    </p-->
 
 
 
