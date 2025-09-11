@@ -50,6 +50,17 @@ html {
     border: 3px solid lightgrey;
     padding: 20px;
 }
+
+/* home button */
+.floating-btn {
+    position: fixed;
+    top: 20px;       /* distance from top */
+    left: 20px;      /* distance from left */
+    z-index: 1050;   /* keep above most elements */
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
     </style>
 
     <script>
@@ -64,6 +75,15 @@ $('a[data-toggle="tooltip"]').tooltip({
   </head>
   
   <body>
+
+    <!-- home button -->
+    <a href="./rai-uk-intl-partnership" class="text-white">
+    <button type="button" class="btn btn-primary floating-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-down-left-square-fill" viewBox="0 0 16 16">
+      <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2zm8.096-10.803L6 9.293V6.525a.5.5 0 0 0-1 0V10.5a.5.5 0 0 0 .5.5h3.975a.5.5 0 0 0 0-1H6.707l4.096-4.096a.5.5 0 1 0-.707-.707"/>
+      </svg>
+    Home
+    </button></a>
 
     <div class="page-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
       <h1 class="display-5">Making Sense of Public Space <br>for Robot Design</h1>

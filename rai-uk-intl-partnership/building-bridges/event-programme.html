@@ -42,12 +42,37 @@ html {
 
 .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
 
+.embed-border
+{
+    border: 3px solid lightgrey;
+    padding: 20px;
+}
+
+/* home button */
+.floating-btn {
+    position: fixed;
+    top: 20px;       /* distance from top */
+    left: 20px;      /* distance from left */
+    z-index: 1050;   /* keep above most elements */
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
     </style>
 
     <title>Building Bridges for Public Robots</title>
   </head>
   
   <body>
+    <!-- home button -->
+    <a href="./rai-uk-intl-partnership" class="text-white">
+    <button type="button" class="btn btn-primary floating-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-down-left-square-fill" viewBox="0 0 16 16">
+      <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2zm8.096-10.803L6 9.293V6.525a.5.5 0 0 0-1 0V10.5a.5.5 0 0 0 .5.5h3.975a.5.5 0 0 0 0-1H6.707l4.096-4.096a.5.5 0 1 0-.707-.707"/>
+      </svg>
+    Home
+    </button></a>
 
     <div>
       <img src="./img/arbetetsmuseum-wide.jpg" class="img-fluid border-dark border-3 border-bottom" alt="Banner showing the river near the Arbetets Museum">
@@ -76,19 +101,21 @@ html {
       <tbody>
         <tr>
           <th scope="row" style="width: 15%;">13:15-13:30</th>
-          <td>Welcome and introduction (<strong>Hannah Pelikan</strong> and <strong>Stuart Reeves</strong>)</td>
+          <td>Welcome and introduction (<strong>Hannah Pelikan</strong> and <strong>Stuart Reeves</strong>) <a href="#intro"><span class="badge badge-pill text-bg-warning">video</span></a>
+          </td>
         </tr>
         <tr>
           <th scope="row">13:30-14:00</th>
-          <td><span class="badge badge-pill text-bg-secondary">Keynote</span> Standardization of Public Mobile Robots (<strong>Lee St. James</strong> - <a href="https://www.urbanroboticsfoundation.org">Urban Robotics Foundation</a>)</td>
+          <td><span class="badge badge-pill text-bg-secondary">Keynote</span> Standardization of public-area mobile robots (PMRs) (<strong>Lee St. James</strong> - <a href="https://www.urbanroboticsfoundation.org">Urban Robotics Foundation</a>)<a href="#lee"><span class="badge badge-pill text-bg-warning">video</span></a></td>
         </tr>
         <tr>
           <th scope="row">14:00-14:30</th>
-          <td>Empirical studies of public robots (<strong>Anna Dobrosovestnova</strong> – TU Vienna, <strong>Oskar Lindwall</strong> – University of Gothenburg, <strong>EunJeong Cheon</strong> – Syracuse University)</td>
+          <td>Empirical studies of public robots (<strong>Anna Dobrosovestnova</strong> – TU Vienna <a href="#annad"><span class="badge badge-pill text-bg-warning">video</span></a>, <strong>Oskar Lindwall</strong> – University of Gothenburg <a href="#oskar"><span class="badge badge-pill text-bg-warning">video</span></a>, <strong>EunJeong Cheon</strong> – Syracuse University <a href="#eunjeong"><span class="badge badge-pill text-bg-warning">video</span></a>)</td>
         </tr>
         <tr>
           <th scope="row">14:30-15:00</th>
-          <td><span class="badge badge-pill text-bg-secondary">Keynote</span> Operating public robots (<strong>Lisa Johnson</strong> - <a href="https://www.starship.xyz">Starship</a>)</td>
+          <td><span class="badge badge-pill text-bg-secondary">Keynote</span> Bringing self-driving robots to public spaces (<strong>Lisa Johnson</strong> - <a href="https://www.starship.xyz">Starship</a>)
+            <a href="#lisa"><span class="badge badge-pill text-bg-warning">video</span></a></td>
         </tr>
         <tr>
           <th scope="row">15:00-15:20</th>
@@ -96,16 +123,16 @@ html {
         </tr>
         <tr>
           <th scope="row">15:20-15:50</th>
-          <td><span class="badge badge-pill text-bg-secondary">Keynote</span> <a href="https://www.drivesweden.net/en/projekt/helsingbotica">Helsingbotica</a> Community Robot (<strong>Daniel Rudmark</strong> – <a href="https://www.vti.se">Swedish National Road and Transport Research Institute</a>)</td>
+          <td><span class="badge badge-pill text-bg-secondary">Keynote</span> <a href="https://www.drivesweden.net/en/projekt/helsingbotica">Helsingbotica</a> community robot (<strong>Daniel Rudmark</strong> – <a href="https://www.vti.se">Swedish National Road and Transport Research Institute</a>) <a href="#daniel"><span class="badge badge-pill text-bg-warning">video</span></a></td>
         </tr>
 
         <tr>
           <th scope="row">15:50-16:20</th>
-          <td>Empirical studies of public robots (<strong>Nikolas Martelaro</strong> – Carnegie Mellon University, <strong>Franziska Babel</strong> – Linköping University, <strong>Wendy Ju</strong> - Cornell University)</td>
+          <td>Empirical studies of public robots (<strong>Nikolas Martelaro</strong> – Carnegie Mellon University <a href="#nik"><span class="badge badge-pill text-bg-warning">video</span></a>, <strong>Franziska Babel</strong> – Linköping University <a href="#franziska"><span class="badge badge-pill text-bg-warning">video</span></a>, <strong>Wendy Ju</strong> - Cornell University <a href="#wendy"><span class="badge badge-pill text-bg-warning">video</span></a>)</td>
         </tr>
         <tr>
           <th scope="row">16:20-16:50</th>
-          <td><span class="badge badge-pill text-bg-secondary">Keynote</span> <a href="https://ridethefuture.se">Ride the Future</a> – A long-term demonstration project (<strong>Anna Anund</strong> – <a href="https://www.vti.se">Swedish National Road and Transport Research Institute</a>)</td>
+          <td><span class="badge badge-pill text-bg-secondary">Keynote</span> <a href="https://ridethefuture.se">Ride the Future</a> – A long-term demonstration project (<strong>Anna Anund</strong> – <a href="https://www.vti.se">Swedish National Road and Transport Research Institute</a> <a href="#annaa"><span class="badge badge-pill text-bg-warning">video</span></a>)</td>
         </tr>
         <tr>
           <th scope="row">16:50-17:00</th>
@@ -119,10 +146,124 @@ html {
     </table>
 
 
+
+
     <figure class="figure">
       <img src="./img/arbetetsmuseum.jpg" class="figure-img img-fluid rounded" alt="A photo of the Arbetets Museum in Norrköping, Sweden">
       <figcaption class="figure-caption">The Arbetets Museum in Norrköping, Sweden</figcaption>
     </figure>
+
+    <h2>Talk Recordings</h2>
+
+    <a name="intro"></a>
+    <h3>Welcome and introduction</h3>
+    Hannah Pelikan and Stuart Reeves
+  
+    <div class="embed-border my-3 text-center">
+    <div class="ratio ratio-16x9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/CyoArKxkKyk?si=52AgkPJf0i9ObggK" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    </div>
+
+
+    <a name="lee"></a>
+    <h3>Standardization of public-area mobile robots (PMRs)</h3>
+    Lee St. James
+    <div class="embed-border my-3 text-center">
+    <div class="ratio ratio-16x9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qeQwJxsQR7M?si=h_wuvAmC8pPkycxA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    </div>
+
+
+    <a name="annad"></a>
+    <h3>Designing for the real world: Academic vs. industry approaches to (urban) robots design</h3>
+    Anna Dobrosovestnova
+    <div class="embed-border my-3 text-center">
+    <div class="ratio ratio-16x9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/k9pODfXFqGo?si=PRJOcJQa5ecdXtgW" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    </div>
+
+
+    <a name="oskar"></a>
+    <h3>Categorial trouble in public space: Membership, visiblity and robots</h3>
+    Oskar Lindwall
+    <div class="embed-border my-3 text-center">
+    <div class="ratio ratio-16x9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/q_Gw9tp1aYY?si=GkUDnfEHD1ZYOSy2" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    </div>
+
+    <a name="eunjeong"></a>
+    <h3>Empirical insights from walking along with robots in urban streets</h3>
+    EunJeong Cheon
+    <div class="embed-border my-3 text-center">
+    <div class="ratio ratio-16x9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vn5GzwJVRfY?si=1VqSBrijQQyJ1xPB" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    </div>
+
+    <a name="lisa"></a>
+    <h3>Bringing self-driving robots to public spaces</h3>
+    Lisa Johnson
+    <div class="embed-border my-3 text-center">
+    <div class="ratio ratio-16x9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5751fd0KinE?si=oV444lIVUiMFpx-J" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    </div>
+
+
+    <a name="daniel"></a>
+    <h3>Helsingbotica community robot</h3>
+    Daniel Rudmark
+    <div class="embed-border my-3 text-center">
+    <div class="ratio ratio-16x9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Zb099YHtPX0?si=mOgTN4txMjoPAy35" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    </div>
+
+
+    <a name="nik"></a>
+    <h3>Sharing the sidewalk: Observing and designing public robot interactions</h3>
+    Nikolas Martelaro
+    <div class="embed-border my-3 text-center">
+    <div class="ratio ratio-16x9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/klu2QYvh2O8?si=tMK9VZUbu9gN_tsX" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    </div>
+
+
+    <a name="franziska"></a>
+    <h3>The unknown and the unexpected in public robot deployments</h3>
+    Franziska Babel
+    <div class="embed-border my-3 text-center">
+    <div class="ratio ratio-16x9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0p7Z5cuMRoA?si=KcUnudospmUIYuy1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    </div>
+
+
+
+    <a name="wendy"></a>
+    <h3>Robot in the city</h3>
+    Wendy Ju
+    <div class="embed-border my-3 text-center">
+    <div class="ratio ratio-16x9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/yIZX9kOV6Gg?si=jJhAPjdRXgG3OuhP" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    </div>
+
+
+    <a name="annaa"></a>
+    <h3>Ride the Future – A long-term demonstration project</h3>
+    Anna Anund
+    <div class="embed-border my-3 text-center">
+    <div class="ratio ratio-16x9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9SlheIL4fgA?si=n5igRrGNNIiR_nOT" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    </div>
+
 
     </div> <!-- container1 -->
 

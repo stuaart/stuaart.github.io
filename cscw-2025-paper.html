@@ -10,7 +10,6 @@
 <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-
     <style>
 html {
   font-size: 14px;
@@ -44,12 +43,31 @@ html {
     padding: 20px;
 }
 
+/* home button */
+.floating-btn {
+    position: fixed;
+    top: 20px;       /* distance from top */
+    left: 20px;      /* distance from left */
+    z-index: 1050;   /* keep above most elements */
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
     </style>
 
     <title>CSCW 2025 Paper: Opening Up Human-Robot Collaboration</title>
   </head>
   
   <body>
+    <!-- home button -->
+    <a href="./rai-uk-intl-partnership" class="text-white">
+    <button type="button" class="btn btn-primary floating-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-down-left-square-fill" viewBox="0 0 16 16">
+      <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2zm8.096-10.803L6 9.293V6.525a.5.5 0 0 0-1 0V10.5a.5.5 0 0 0 .5.5h3.975a.5.5 0 0 0 0-1H6.707l4.096-4.096a.5.5 0 1 0-.707-.707"/>
+      </svg>
+    Home
+    </button></a>
 
     <div class="page-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
       <h1 class="display-5">Opening Up Human-Robot Collaboration</h1>
@@ -77,6 +95,10 @@ html {
     
     <h3>Figure 2: Following and Overtaking</h3>
     <p>
+      A pedestrian holding a shopping bag is walking a few metres behind a robot travelling in the same direction as them along the pavement (sidewalk). The robot speeds up and slows down, as well as veering left and right. A key moment in this clip is the point where the robot brakes abruptly; it is unclear why. The pedestrian stops too, left arm swinging out to steady against the momentum shift of the action. Then everything gets moving again.
+    </p>
+    <p>
+      Following a robot like this one involves judicious management of distance as well as dealing with the specific character of its mobility. We can see how the various movements of the robot - its wandering position on the pavement, variable speed, as well as its sudden stop - need to be dealt with by the pedestrian. Conduct on the street is accountable, that is, people search for as well as produce bodily, verbal, etc. actions that are oriented to their recognisability as such to other street users. As we see from the wandering and variable speed of the robot's trajectory, core elements from this natural accountability are missing in action-design. Instead the robot acts as a kind of mobile obstacle. 
     </p>
     
     <div class="embed-border my-3 text-center">
@@ -88,7 +110,7 @@ html {
 
     <h3>Figure 3: Using a ‘Bulge’ to Pass By</h3>
     <p>
-      
+      Three pedestrians are encountering a robot head-on here. The pedestrians work as a cohort to adopt a bulging or bubble-like spatial formation as the robot drives towards them, and as they walk towards the robot. In other words, the cohort yields space to the robot. This is something of an inversion of norms - typically it is the individual who makes space for a group.
     </p>
 
     <div class="embed-border my-3 text-center">
@@ -99,6 +121,7 @@ html {
 
    <h3>Figure 4: Reconfiguration by Squeezing Past a Post</h3>
     <p>
+      We see a similar phenomena in this fragment as with the previous one. Two pedestrians approaching a robot on a much narrower pavement. As they approach a metal post, the robot  is also heading towards them. Soon the robot is passing the post and stops momentarily, then continues to move as the pedestrians squeeze around the post in single file.
     </p>
 
     <div class="embed-border my-3 text-center">
@@ -110,7 +133,12 @@ html {
 
     <h3>Figure 5: A Close Scrape</h3>
     <p>
+      While the footpath here is much wider than previous fragment, a pedestrian and the robot are heading directly into one another's path. As the gap is closed between the pedestrian and the robot, the robot brakes hard, with rear wheels visibly lifting. The pedestrian on the other hand deviates only slightly from their original walking trajectory and - almost at the last moment - rapidly swings around the left side of the robot and clears the space.
     </p>
+    <p>
+      The response from the robot is to brake hard, and then to deviate from its prior trajectory in a way that takes place well after the very fact of the passing by has taken place, when all is largely done and dusted and really no longer relevant.
+    </p>
+    
 
     <div class="embed-border my-3 text-center">
     <div class="ratio ratio-16x9">
@@ -121,6 +149,10 @@ html {
 
     <h3>Figure 6: Fully Yielding</h3>
     <p>
+      A robot is driving towards the centre of the pavement space while a buggy-pushing pedestrian also approaches from the opposite direction. The buggy-pusher seems to anticipate a projectable moment of passing by moving the buggy (and their walking trajectory) to the hug the shop fronts to enable joint passing, however the robot steers around some errant binbags and veers so close to the buggy-pusher that they are forced to yield space.
+    </p>
+    <p>
+      The buggy-pusher visibly anticipates the need for managing space, making way for the robot and reconfiguring their use of the pavement as a kind of 'proffer' for how passing by could proceed. Yet, this ultimately does not work and they end up in a turn-taking type environment with the robot where someone must go first (a result of the robot's lateral position on the pavement). While the robot seems to optimise pavement position on the basis of obstacles, the clear need here is for acknowledgement of the moral order of passing someone pushing a buggy as a feature of how turn-taking may be done on the street.
     </p>
 
     <div class="embed-border my-3 text-center">
@@ -131,6 +163,10 @@ html {
 
     <h3>Figure 7: Dealing with an Intersection</h3>
     <p>
+      This is the most complex fragment in our collection for this paper. A robot moves towards the entrance of a shopping centre. There are three pedestrians moving with separate and different walking trajectories towards this entrance which will intersect with the robot's trajectory. As the robot approaches and begins crossing the entrance, someone in blue jeans and a black top walks across its path, probably causing it to brake hard and stop. At the same time as this particular intersection happens, another, different intersection is simultaneously unfolding between someone holding a white piece of paper and the robot. There is a moment of hesitation as the paper-holder seems to expect the robot to take the opportunity provided by them pausing for it to pass. But the robot does not, so they take the turn and continue their path into the shopping centre. At that same moment, the robot commences driving again, this time towards them.
+    </p>
+    <p>
+    Like the buggy-pusher example, robots are entering a potential crossing point; this is visible for 'anyone' to see, as competent members of urban life. Going this way thus holds the potential for encounters where coordination between pedestrians via turn-taking could be on the cards. But, of course, the robot does not know this, and in the end it falls to the pedestrians to integrate the robot into this system of turn-taking around the entrance.
     </p>
 
     <div class="embed-border my-3 text-center">
