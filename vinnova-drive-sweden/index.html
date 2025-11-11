@@ -41,12 +41,32 @@ html {
 .border-bottom { border-bottom: 1px solid #e5e5e5; }
 
 .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+/* home button */
+.floating-btn {
+    position: fixed;
+    top: 20px;       /* distance from top */
+    left: 20px;      /* distance from left */
+    z-index: 1050;   /* keep above most elements */
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
     </style>
 
     <title>When delivery robots enter public spaces: A longitudinal study of Starship robots in Stockholm</title>
   </head>
   
   <body>
+
+    <!-- back to main button -->
+    <a href="../" class="text-white">
+    <button type="button" class="btn btn-primary floating-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-down-left-square-fill" viewBox="0 0 16 16">
+      <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2zm8.096-10.803L6 9.293V6.525a.5.5 0 0 0-1 0V10.5a.5.5 0 0 0 .5.5h3.975a.5.5 0 0 0 0-1H6.707l4.096-4.096a.5.5 0 1 0-.707-.707"/>
+      </svg>
+    robotsinpublic.org
+    </button></a>
 
     <div>
       <img src="./img/en-sip-logo-program-rgb-1614x240.png" class="img-fluid" alt="logos of project sponsors, listed in the main text">
@@ -74,21 +94,36 @@ html {
     <div class="container">
     
     <h2>Team</h2>
-    <p>
-      <a href="https://hannahpelikan.com">Hannah Pelikan</a> (PI) <span class="text-muted">Department of Culture and Society, Linköping University, Sweden</span>
-      <br>
-      <a href="http://www.cs.nott.ac.uk/~str">Stuart Reeves</a> (Subcontracting partner) <span class="text-muted">School of Computer Science, University of Nottingham, UK</span>
-      <br>
-      <a href="https://www.vti.se/en/employees/daniel-rudmark">Daniel Rudmark</a> (Co-PI) <span class="text-muted">VTI, Swedish National Road and Transport Research Institute</span>
-      <br>
-      <a href="https://www.starship.xyz/"> Starship Technologies</a> (Partner)
-      <a href="https://start.stockholm/en/"> City of Stockholm</a> (Partner) 
-      <br>
-      <a href="https://www.transportstyrelsen.se/en/">Transportstyrelsen, Swedish Transport Agency</a> (Partner) 
-      <br>
-      <a href="https://www.urbanroboticsfoundation.org/"> Urban Robotics Foundation</a> (Partner)
-      <br>
-    </p>
+
+    <div class="row">
+      <div class="col-md-6">
+        <figure class="figure">
+          <img src="./img/LeveransrobotarStockholm.png" class="figure-img img-fluid rounded" alt="A photo of a Starship robot on the streets of Stockholm, Sweden">
+          <figcaption class="figure-caption">A delivery robot on the streets of Stockholm, Sweden</figcaption>
+        </figure>
+        <!--img class="img-thumbnail img-fluid" src=""/-->
+      </div>
+      <div class="col-md-6">
+        <p>
+        <a href="https://hannahpelikan.com">Hannah Pelikan</a> (PI) <span class="text-muted">Department of Culture and Society, Linköping University, Sweden</span>
+        <br>
+        <a href="http://www.cs.nott.ac.uk/~str">Stuart Reeves</a> (Subcontracting partner) <span class="text-muted">School of Computer Science, University of Nottingham, UK</span>
+        <br>
+        <a href="https://www.vti.se/en/employees/daniel-rudmark">Daniel Rudmark</a> (Co-PI) <span class="text-muted">VTI, Swedish National Road and Transport Research Institute</span>
+        <br>
+        <a href="https://www.starship.xyz/"> Starship Technologies</a> (Partner)
+        <br>
+        <a href="https://start.stockholm/en/"> City of Stockholm</a> (Partner) 
+        <br>
+        <a href="https://www.transportstyrelsen.se/en/">Transportstyrelsen, Swedish Transport Agency</a> (Partner) 
+        <br>
+        <a href="https://www.urbanroboticsfoundation.org/"> Urban Robotics Foundation</a> (Partner)
+        </p>
+      </div>
+    </div>
+
+   
+    
 
     <h2>What this project is about</h2>
     <p>
