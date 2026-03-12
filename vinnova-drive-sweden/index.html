@@ -37,6 +37,12 @@ html {
   min-width: 220px;
 }
 
+.embed-border
+{
+    border: 3px solid lightgrey;
+    padding: 20px;
+}
+
 .border-top { border-top: 1px solid #e5e5e5; }
 .border-bottom { border-bottom: 1px solid #e5e5e5; }
 
@@ -92,10 +98,12 @@ html {
     
     <!-- container1 -->
     <div class="container">
-    
+
     <h2>Team</h2>
-      <div class="row">
-      <div class="col-md-6">
+
+    <div class="row"> <!-- row1 -->
+
+      <div class="col">
           <h3>Researchers</h3>
         <a href="https://hannahpelikan.com">Hannah Pelikan</a> (PI) <br>
           <span class="text-muted">Department of Culture and Society, Linköping University, Sweden</span>
@@ -108,7 +116,7 @@ html {
         <a href="https://www.vti.se/en/employees/niklas-arvidsson">Niklas Arvidsson</a> (Senior Researcher), <br>
         <span class="text-muted"> VTI, Swedish National Road and Transport Research Institute</span>
       </div>
-        <div class="col-md-6">
+      <div class="col">
         <h3>Partners</h3>  
         <a href="https://www.starship.xyz/"> Starship Technologies</a> 
         <br>
@@ -117,12 +125,13 @@ html {
         <a href="https://www.transportstyrelsen.se/en/">Transportstyrelsen, Swedish Transport Agency</a> 
         <br>
         <a href="https://www.urbanroboticsfoundation.org/"> Urban Robotics Foundation</a>
-          <br>
       </div>
-    </div>
+    </div> <!-- row1 -->
+    
 
     <h2>What this project is about</h2>
-     <div class="row"> <!-- row1 -->
+
+    <div class="row"> <!-- row2 -->
       <div class="col-md-6">
       <p>
         The project follows the first deployment of a fleet of delivery robots in Sweden. We use empirical evidence in the form of video recordings of the behaviour of people who encounter the robots and interviews with people on the street to inform policies for the deployment of autonomous public delivery robots in Sweden, and the development of standards for public mobile robots globally.
@@ -148,44 +157,40 @@ html {
         </figure>
         <!--img class="img-thumbnail img-fluid" src=""/-->
       </div>
-    </div>
+    </div> <!-- row2 -->
+
 
     <h2>Project publications, activities, and other outputs</h2>
-    <div class="row"> <!-- row1 -->
-      <div class="col-sm-8">
-        Over the lifetime of the project we have so far conducted research on public robots, published academic and industry white papers, and engaged with external organisations. 
-        <ul>
-          <li><span class="badge text-bg-warning">WHITE PAPER</span>
-          Hannah Pelikan, Daniel Rudmark, Cilli Sobiech, Niklas Arvidsson, Stuart Reeves and Bern Grush. <strong>Autonomous Delivery Robots in Dense Urban Environments: Stockholm's First Unaccompanied Fleet Deployment</strong> (<a href="https://liu.diva-portal.org/smash/get/diva2:2036967/FULLTEXT02.pdf">PDF</a>). Presented at <em>HRI 2026 Industry Day</em>. 
-          </li>
-          <li><span class="badge text-bg-warning">PUBLICATION</span>
-          Simon Ekman, Joachim Örtegren, Kacper Mateusz Sieklucki, Raymond Tchou, Ludwig Halvorsen, and Hannah Pelikan. <strong>Sharing Public Space with Robots: Following a Fleet of Delivery Robots on City Sidewalks</strong> (<a href="https://hannahpelikan.com/wp-content/uploads/2026/02/ekmanetal2026-sharing-public-space.pdf">PDF</a><!--, <a href="https://doi.org/10.1145/3776734.3794348">DOI</a-->). In Companion Proc. <em>HRI 2026</em>. 
-          </li>
-          <li><span class="badge text-bg-info">RADIO INTERVIEW</span>
-          <a href="https://www.sverigesradio.se/vetenskapspodden">Sveriges Radio P1 Vetenskapspodden</a> Aug 30th 2025, "<a href="https://www.sverigesradio.se/avsnitt/darfor-kan-vi-fa-vanta-pa-matroboten">Därför kan vi få vänta på matroboten – människornas trafikbeteenden för svåra att läsa</a>" with Hannah Pelikan and Christian Smith (KTH), host Lena Nordlund.
-          </li>
-        </ul>
-      </div>
-    </div>
+
+    <p>
+    Over the lifetime of the project we have so far conducted research on public robots, published academic and industry white papers, and engaged with external organisations. 
+    </p>
+    <ul>
+      <li><span class="badge text-bg-warning">WHITE PAPER</span>
+      Hannah Pelikan, Daniel Rudmark, Cilli Sobiech, Niklas Arvidsson, Stuart Reeves and Bern Grush. <strong>Autonomous Delivery Robots in Dense Urban Environments: Stockholm's First Unaccompanied Fleet Deployment</strong> (<a href="https://liu.diva-portal.org/smash/get/diva2:2036967/FULLTEXT02.pdf">PDF</a>). Presented at <em>HRI 2026 Industry Day</em>. 
+      </li>
+      <li><span class="badge text-bg-warning">PUBLICATION</span>
+      Simon Ekman, Joachim Örtegren, Kacper Mateusz Sieklucki, Raymond Tchou, Ludwig Halvorsen, and Hannah Pelikan. <strong>Sharing Public Space with Robots: Following a Fleet of Delivery Robots on City Sidewalks</strong> (<a href="https://hannahpelikan.com/wp-content/uploads/2026/02/ekmanetal2026-sharing-public-space.pdf">PDF</a><!--, <a href="https://doi.org/10.1145/3776734.3794348">DOI</a-->). In Companion Proc. <em>HRI 2026</em>. 
+      </li>
+      <li><span class="badge text-bg-info">RADIO INTERVIEW</span>
+      <a href="https://www.sverigesradio.se/vetenskapspodden">Sveriges Radio P1 Vetenskapspodden</a> Aug 30th 2025, "<a href="https://www.sverigesradio.se/avsnitt/darfor-kan-vi-fa-vanta-pa-matroboten">Därför kan vi få vänta på matroboten – människornas trafikbeteenden för svåra att läsa</a>" with Hannah Pelikan and Christian Smith (KTH), host Lena Nordlund.
+      </li>
+    </ul>
    
-
     <h2>Student work related to this project</h2>
-      <div class="row"> <!-- row1 -->
-        <div class="col-sm-8">
-          <ul>
-          <li>Karin Stendahl: Exploring the societal value of delivery robots [Master thesis]</li>
-          <li>Simon Ekman:  Designing legible robot motion [Bachelor thesis]</li>
-          <li>Kacper Mateusz Sieklucki: Pedestrian perspectives on robot fleet deployments [Bachelor thesis]</li>
-         </ul>
-       </div>
-    </div>
+    <ul>
+      <li>Karin Stendahl: Exploring the societal value of delivery robots [Master thesis]</li>
+      <li>Simon Ekman:  Designing legible robot motion [Bachelor thesis]</li>
+      <li>Kacper Mateusz Sieklucki: Pedestrian perspectives on robot fleet deployments [Bachelor thesis]</li>
+    </ul>
 
-  
+
     <div class="embed-border my-3 text-center">
-    <div class="ratio ratio-16x9">
-      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/O08TIDDLHsE?si=EpC10pWnAbYkMBhT?autoplay=1" allow="autoplay" title="YouTube video player"; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    
+    <div class=" ratio ratio-16x9">
+    <iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/O08TIDDLHsE?si=EpC10pWnAbYkMBhT" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
-    </div
+    </div>  
+
      
     <img src="./img/Logotype_Drive_Sweden_RGB_Black.png" class="figure-img img-fluid rounded" alt="drive sweden logo">
 
